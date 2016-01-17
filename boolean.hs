@@ -7,11 +7,11 @@ xor b1 b2 = False
 
 myand :: Bool -> Bool -> Bool
 myand True b = b
-myand False b = False
+myand False _ = False
 
 
 -- Or 
 
 myor :: Bool -> Bool -> Bool
-myor True b = True
+myor True _ = True
 myor False b= b
